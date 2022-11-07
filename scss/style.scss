@@ -9,6 +9,7 @@
 body {
   max-width: 1200px;
   overflow: hidden;
+  font-family: "Quicksand", sans-serif;
 }
 
 // header
@@ -38,10 +39,79 @@ header {
       }
     }
     .right-side {
-      width: 50%;
+      width: 30%;
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
+      justify-content: space-around;
+
+      button {
+        border: none;
+        background-color: #3a7d94;
+        color: white;
+        padding: 8px;
+        border-radius: 8px;
+      }
+    }
+  }
+  .header-items {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    div {
+      width: 50%;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      i {
+        margin-right: 5px;
+      }
+    }
+    .active {
+      background-color: #23353b;
+      border-bottom: 5px solid red;
+    }
+  }
+}
+
+// NAV
+nav {
+  width: 100%;
+  background-color: #c8cdcd;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  .active {
+    border-bottom: 4px solid red;
+    color: red;
+  }
+  .item {
+    text-align: center;
+    padding: 17px 0;
+    i {
+      font-size: 20px;
+    }
+    .desc {
+      margin-top: 5px;
+    }
+  }
+  .favourites {
+    position: relative;
+    .amount-fav {
+      background-color: gray;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      top: 7%;
+      right: 7%;
+      border-radius: 2px;
     }
   }
 }

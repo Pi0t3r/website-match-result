@@ -10,6 +10,13 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <header>
@@ -18,7 +25,14 @@
       </div>
       <div class="header-content">
         <div class="left-side">
-          <div class="title"><span class="logo"><img src="https://png.pngtree.com/png-vector/20200921/ourlarge/pngtree-red-and-black-logo-png-image_2348180.jpg" alt=""></span> Livescore</div>
+          <div class="title">
+            <span class="logo"
+              ><img
+                src="https://png.pngtree.com/png-vector/20200921/ourlarge/pngtree-red-and-black-logo-png-image_2348180.jpg"
+                alt=""
+            /></span>
+            Livescore
+          </div>
         </div>
         <div class="right-side">
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -27,17 +41,68 @@
         </div>
       </div>
       <div class="header-items">
-        <div class="results">
+        <div class="results navigation">
           <p>
             <span><i class="fa-regular fa-futbol"></i></span> Wyniki
           </p>
         </div>
-        <div class="news">
+        <div class="news navigation">
           <p>
             <span><i class="fa-regular fa-newspaper"></i></span> Wiadomości
           </p>
         </div>
       </div>
     </header>
+    <nav>
+      <div class="favourites item">
+        <div class="image">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="amount-fav">0</div>
+        <div class="desc">
+          <p>Ulubione</p>
+        </div>
+      </div>
+      <div class="soccer item">
+        <div class="image">
+          <i class="fa-solid fa-futbol"></i>
+        </div>
+        <div class="desc">
+          <p>Piłka no...</p>
+        </div>
+      </div>
+      <div class="tenis item">
+        <div class="image">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="desc">
+          <p>Tenis</p>
+        </div>
+      </div>
+      <div class="hockey item">
+        <div class="image">
+          <i class="fa-solid fa-hockey-puck"></i>
+        </div>
+        <div class="desc">
+          <p>Hokej</p>
+        </div>
+      </div>
+      <div class="basketball item">
+        <div class="image">
+          <i class="fa-solid fa-basketball"></i>
+        </div>
+        <div class="desc">
+          <p>Koszykó...</p>
+        </div>
+      </div>
+      <div class="other item">
+        <div class="image">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="desc">
+          <p>Pozostałe</p>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>

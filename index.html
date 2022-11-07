@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="header-items">
-        <div class="results navigation">
+        <div class="results navigation active">
           <p>
             <span><i class="fa-regular fa-futbol"></i></span> Wyniki
           </p>
@@ -63,7 +63,7 @@
           <p>Ulubione</p>
         </div>
       </div>
-      <div class="soccer item">
+      <div class="soccer item active">
         <div class="image">
           <i class="fa-solid fa-futbol"></i>
         </div>
@@ -104,5 +104,21 @@
         </div>
       </div>
     </nav>
+    <main>
+      <div class="filters">
+        <button class="btn-filter active">Wszystkie</button>
+        <button class="btn-filter">Live</button>
+        <button class="btn-filter">Kursy</button>
+        <button class="btn-filter">Zakończone</button>
+        <button class="btn-filter">Następne</button>
+      </div>
+      <div class="calendar">
+        <div id="previous-day"></div>
+        <div class="date-picker">
+            <input type="date" id="test">
+        </div>
+        <div id="next-day"></div>
+      </div>
+    </main>
   </body>
 </html>

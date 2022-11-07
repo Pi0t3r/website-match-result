@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+header {
+  background-color: #001e28;
+  color: white;
+}
+header .short-description {
+  background-color: #112f39;
+  text-align: center;
+  padding: 5px;
+}
+header .header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px;
+}
+header .header-content .left-side {
+  width: 50%;
+}
+header .header-content .left-side .title {
+  width: 100%;
+  text-transform: uppercase;
+}
+header .header-content .left-side .title .logo img {
+  width: 10%;
+}
+header .header-content .right-side {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}/*# sourceMappingURL=style.css.map */

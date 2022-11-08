@@ -25,6 +25,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 8px;
     .left-side {
       width: 50%;
@@ -150,6 +151,8 @@ main {
       background-color: lightgray;
       padding: 7px;
       border-radius: 8px;
+      border: none;
+      width: 10%;
     }
     .date-picker {
       padding: 7px;
@@ -162,7 +165,7 @@ main {
       i {
         margin-right: 2%;
       }
-      p{
+      p {
         width: 50%;
       }
       .day,

@@ -25,6 +25,7 @@ header .header-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 8px;
 }
 header .header-content .left-side {
@@ -144,6 +145,8 @@ main .calendar #next-day {
   background-color: lightgray;
   padding: 7px;
   border-radius: 8px;
+  border: none;
+  width: 10%;
 }
 main .calendar .date-picker {
   padding: 7px;

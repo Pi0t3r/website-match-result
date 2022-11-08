@@ -5,6 +5,8 @@ const elements = [
   document.querySelectorAll(".item"),
   document.querySelectorAll(".btn-filter"),
 ];
+const previousDayBtn = document.querySelector("#previous-day");
+const nextDayBtn = document.querySelector("#next-day");
 
 elements.forEach((items) => {
   const toggle = (e) => {
@@ -16,69 +18,64 @@ elements.forEach((items) => {
   items.forEach((item) => item.addEventListener("click", toggle));
 });
 
-// const daysWeek = {
-//   0: "PO",
-//   1: "WT",
-//   2: "ŚR",
-//   3: "CZ",
-//   4: "PT",
-//   5: "SO",
-//   6: "NI",
-//   // { 0: "PO" },
-//   // { 1: "WT" },
-//   // { 2: "ŚR" },
-//   // { 3: "CZ" },
-//   // { 4: "PT" },
-//   // { 5: "SO" },
-//   // { 6: "NI" },
-// };
-
-
-
-const day = new Date();
+let day = new Date();
 let date = day.getDate();
 let month = day.getMonth();
 let time = day.getTime();
-let currentDay = day.getDay()
-console.log(currentDay)
-function switchDay() {
-  switch (currentDay) {
-    case 1:
-      inputDayWeek.innerHTML = 'PO'
-      break;
-    case 2:
-      inputDayWeek.innerHTML = 'WT'
-      break;
-    case 3:
-      inputDayWeek.innerHTML = 'ŚR'
-      break;
-    case 4:
-      inputDayWeek.innerHTML = 'CZ'
-      break;
-    case 5:
-      inputDayWeek.innerHTML = 'PT'
-      break;
-    case 6:
-      inputDayWeek.innerHTML = 'SO'
-      break;
-    case 7:
-      inputDayWeek.innerHTML = 'NI'
-      break;
-  }
-}
-switchDay()
+let currentDay = day.getDay();
+
 function setDay() {
   if (day.getDate() < 10) {
     inputDay.innerHTML = `0${day.getDate()}/ ${day.getMonth()}`;
-    // inputDay.innerHTML = 'siema'
   } else {
     inputDay.innerHTML = `${day.getDate()}/ ${day.getMonth()}`;
-    // inputDay.innerHTML = 'siema'
   }
 }
 setDay();
-
-function getPreviousDay(date = new Date()) {
-  const previous = new Date(date.getTime());
-  previous.setDate(date.getDate() - 1);
+function switchDay() {
+  switch (currentDay) {
+    case 1:
+      inputDayWeek.innerHTML = "PO";
+      break;
+    case 2:
+      inputDayWeek.innerHTML = "WT";
+      break;
+    case 3:
+      inputDayWeek.innerHTML = "ŚR";
+      break;
+    case 4:
+      inputDayWeek.innerHTML = "CZ";
+      break;
+    case 5:
+      inputDayWeek.innerHTML = "PT";
+      break;
+    case 6:
+      inputDayWeek.innerHTML = "SO";
+      break;
+    case 7:
+      inputDayWeek.innerHTML = "NI";
+      break;
+  }
 }
+switchDay();
+function getPreviousDay() {
+  day.setDate(day.getDate() - 1);
+  // day.setDay(day.getDay() - 1);
+}
+function getNextDay() {
+  day.setDate(day.getDate() + 1);
+  // day.setDay(currentDay + 1);
+}
+
+function setPrevDay() {
+  switchDay();
+  setDay();
+  getPreviousDay();
+}
+function setNextDay() {
+  switchDay();
+  setDay();
+  getNextDay();
+}
+nextDayBtn.addEventListener("click", setNextDay);
+previousDayBtn.addEventListener("click", setPrevDay);

@@ -130,4 +130,34 @@ main .filters button {
 main .filters .active {
   background-color: red;
   color: white;
+}
+main .calendar {
+  background-color: rgb(189, 189, 189);
+  padding: 8px 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+}
+main .calendar #previous-day,
+main .calendar #next-day {
+  background-color: lightgray;
+  padding: 7px;
+  border-radius: 8px;
+}
+main .calendar .date-picker {
+  padding: 7px;
+  background-color: lightgray;
+  border-radius: 8px;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main .calendar .date-picker i {
+  margin-right: 2%;
+}
+main .calendar .date-picker .day,
+main .calendar .date-picker .day-week {
+  margin-left: 7%;
 }/*# sourceMappingURL=style.css.map */

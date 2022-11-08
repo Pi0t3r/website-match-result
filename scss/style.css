@@ -157,6 +157,9 @@ main .calendar .date-picker {
 main .calendar .date-picker i {
   margin-right: 2%;
 }
+main .calendar .date-picker p {
+  width: 50%;
+}
 main .calendar .date-picker .day,
 main .calendar .date-picker .day-week {
   margin-left: 7%;

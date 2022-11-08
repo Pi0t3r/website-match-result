@@ -26,9 +26,9 @@ let currentDay = day.getDay();
 
 function setDay() {
   if (day.getDate() < 10) {
-    inputDay.innerHTML = `0${day.getDate()}/ ${day.getMonth()}`;
+    inputDay.innerHTML = `0${day.getDate()}/ ${day.getMonth() + 1}`;
   } else {
-    inputDay.innerHTML = `${day.getDate()}/ ${day.getMonth()}`;
+    inputDay.innerHTML = `${day.getDate()}/ ${day.getMonth() + 1}`;
   }
 }
 setDay();

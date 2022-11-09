@@ -33,7 +33,7 @@ function setDay() {
 }
 setDay();
 function switchDay() {
-  switch (currentDay) {
+  switch (day.getDay()) {
     case 1:
       inputDayWeek.innerHTML = "PO";
       break;
@@ -52,7 +52,7 @@ function switchDay() {
     case 6:
       inputDayWeek.innerHTML = "SO";
       break;
-    case 7:
+    case 0:
       inputDayWeek.innerHTML = "NI";
       break;
   }
@@ -60,16 +60,13 @@ function switchDay() {
 switchDay();
 function getPreviousDay() {
   day.setDate(day.getDate() - 1);
-  // day.setDay(day.getDay() - 1);
 }
 function getNextDay() {
   day.setDate(day.getDate() + 1);
-  // day.setDay(currentDay + 1);
 }
 
 function setPrevDay() {
   switchDay();
-  setDay();
   getPreviousDay();
 }
 function setNextDay() {

@@ -166,4 +166,93 @@ main .calendar .date-picker p {
 main .calendar .date-picker .day,
 main .calendar .date-picker .day-week {
   margin-left: 7%;
+}
+main .matches {
+  display: flex;
+  flex-direction: column;
+}
+main .matches .league .league-name .league-title {
+  display: flex;
+  flex-direction: row;
+  background-color: lightgoldenrodyellow;
+  justify-content: space-between;
+  align-items: center;
+}
+main .matches .league .league-name .league-title .flag-star {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  width: 20%;
+}
+main .matches .league .league-name .league-title .flag-star img {
+  width: 50%;
+}
+main .matches .league .league-name .league-title .info-league {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  width: 60%;
+}
+main .matches .league .league-name .league-title .info-league .name-league {
+  font-weight: bold;
+}
+main .matches .league .league-name .league-title .info-league .country-league {
+  text-transform: uppercase;
+}
+main .matches .league .league-name .league-title .info-league .name-league,
+main .matches .league .league-name .league-title .info-league .country-league {
+  font-size: 12px;
+}
+main .matches .league .league-name .league-title .wrapping-curling-league {
+  margin-left: 15%;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+main .matches .league .first-match {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+main .matches .league .first-match .favourites-match {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .matches .league .first-match .match {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+main .matches .league .first-match .match .home {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+}
+main .matches .league .first-match .match .home img {
+  width: 10%;
+  padding: 5px;
+}
+main .matches .league .first-match .match .away {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50%;
+}
+main .matches .league .first-match .match .away img {
+  width: 10%;
+  padding: 5px;
+}
+main .matches .league .first-match .info-match {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding-right: 5%;
 }/*# sourceMappingURL=style.css.map */

@@ -174,4 +174,98 @@ main {
       }
     }
   }
+  .matches {
+    display: flex;
+    flex-direction: column;
+    .league {
+      .league-name {
+        .league-title {
+          display: flex;
+          flex-direction: row;
+          background-color: lightgoldenrodyellow;
+          justify-content: space-between;
+          align-items: center;
+          .flag-star {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            width: 20%;
+            img {
+              width: 50%;
+            }
+          }
+          .info-league {
+            display: flex;
+            flex-direction: column;
+            padding: 3px;
+            width: 60%;
+            .name-league {
+              font-weight: bold;
+            }
+            .country-league {
+              text-transform: uppercase;
+            }
+            .name-league,
+            .country-league {
+              font-size: 12px;
+            }
+          }
+          .wrapping-curling-league {
+            margin-left: 15%;
+            display: flex;
+            justify-content: center;
+            width: 20%;
+          }
+        }
+      }
+      .first-match {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        .favourites-match {
+          width: 10%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .match {
+          display: flex;
+          flex-direction: column;
+
+          width: 80%;
+          .home {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: row;
+            img {
+              width: 10%;
+              padding: 5px;
+            }
+          }
+          .away {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 50%;
+            img {
+              width: 10%;
+              padding: 5px;
+            }
+          }
+        }
+        .info-match {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: bold;
+          padding-right: 5%;
+        }
+      }
+    }
+  }
 }

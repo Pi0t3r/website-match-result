@@ -7,7 +7,7 @@ const elements = [
 ];
 const previousDayBtn = document.querySelector("#previous-day");
 const nextDayBtn = document.querySelector("#next-day");
-
+let day = new Date();
 elements.forEach((items) => {
   const toggle = (e) => {
     items.forEach((element) => {
@@ -17,12 +17,6 @@ elements.forEach((items) => {
   };
   items.forEach((item) => item.addEventListener("click", toggle));
 });
-
-let day = new Date();
-let date = day.getDate();
-let month = day.getMonth();
-let time = day.getTime();
-let currentDay = day.getDay();
 
 function setDay() {
   if (day.getDate() < 10) {
@@ -67,6 +61,7 @@ function getNextDay() {
 
 function setPrevDay() {
   switchDay();
+  setDay();
   getPreviousDay();
 }
 function setNextDay() {

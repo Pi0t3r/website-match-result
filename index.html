@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <script src="./js/script.js" defer></script>
+    <script src="./js/api-script.js" defer></script>
   </head>
   <body>
     <header>
@@ -113,12 +114,60 @@
         <button class="btn-filter">Następne</button>
       </div>
       <div class="calendar">
-        <button id="previous-day"><i class="fa-solid fa-chevron-left"></i></button>
+        <button id="previous-day">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
         <div class="date-picker">
           <i class="fa-regular fa-calendar-days"></i>
           <p><span class="day"></span><span class="day-week"></span></p>
         </div>
         <button id="next-day"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+      <div class="matches">
+        <div class="league">
+          <div class="league-name">
+            <div class="league-title">
+              <div class="flag-star">
+                <i class="fa-regular fa-star"></i>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/240px-Flag_of_England.svg.png"
+                  alt=""
+                />
+              </div>
+              <div class="info-league">
+                <p class="name-league">Premier League</p>
+                <p class="country-league">Anglia</p>
+              </div>
+              <div class="wrapping-curling-league">
+                <i class="fa-solid fa-chevron-up"></i>
+              </div>
+            </div>
+          </div>
+          <div class="first-match">
+            <div class="favourites-match">
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="match">
+              <div class="home">
+                <img
+                  src="https://brandingmonitor.pl/wp-content/uploads/2015/12/nowe-logo-manchester-city.png"
+                  alt=""
+                />
+                <p class="club-name-home">Manchester City</p>
+              </div>
+              <div class="away">
+                <img
+                  src="https://www.freelogovectors.net/wp-content/uploads/2021/03/brentford-fc-logo-freelogovectors.net_.png"
+                  alt=""
+                />
+                <p class="club-name-away">Brentford</p>
+              </div>
+            </div>
+            <div class="info-match">
+              <p class="start-match">13:30</p>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   </body>

@@ -17,7 +17,7 @@ const premierLeague = {
     },
     manCity: {
       name: "Manchester City",
-      logo: "https://w1.pngwing.com/pngs/203/356/png-transparent-premier-league-logo-manchester-manchester-city-fc-organization-line-area-circle-symbol.png",
+      logo: "https://i.pinimg.com/originals/ce/da/77/ceda77586409fc9df97873db960c260e.png",
       points: 32,
       winMatch: 10,
       drawMatch: 2,
@@ -38,6 +38,7 @@ const premierLeague = {
       concededGoals: 11,
       goalDifference: 17,
       matchesPlayed: 14,
+      logo: "https://assets.stickpng.com/images/580b57fcd9996e24bc43c4ec.png",
     },
     tottenham: {
       name: "Tottenham",
@@ -50,10 +51,11 @@ const premierLeague = {
       concededGoals: 18,
       goalDifference: 9,
       matchesPlayed: 14,
+      logo: "// https://assets.stickpng.com/images/580b57fcd9996e24bc43c4df.png",
     },
     manUtd: {
       name: "Manchester United",
-      logo: "",
+      logo: "https://pngimg.com/uploads/manchester_united/manchester_united_PNG22.png",
       points: 23,
       winMatch: 7,
       drawMatch: 2,
@@ -101,7 +103,7 @@ const premierLeague = {
     },
     fulham: {
       name: "Fulham",
-      logo: "",
+      logo: "https://i.pinimg.com/564x/cd/2d/9b/cd2d9bb09384ba542ed9f295f8dbc403.jpg",
       points: 19,
       winMatch: 5,
       drawMatch: 4,
@@ -113,7 +115,7 @@ const premierLeague = {
     },
     crystalPal: {
       name: "Crystal Palace",
-      logo: "",
+      logo: "https://upload.wikimedia.org/wikipedia/hif/c/c1/Crystal_Palace_FC_logo.png",
       points: 19,
       winMatch: 5,
       drawMatch: 4,
@@ -125,7 +127,7 @@ const premierLeague = {
     },
     brendford: {
       name: "Brendford",
-      logo: "",
+      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Brentford_FC_crest.svg/640px-Brentford_FC_crest.svg.png",
       points: 16,
       winMatch: 3,
       drawMatch: 7,
@@ -137,7 +139,7 @@ const premierLeague = {
     },
     leeds: {
       name: "Leeds",
-      logo: "",
+      logo: "../images/logo-leeds_preview_rev_1.png",
       points: 15,
       winMatch: 4,
       drawMatch: 3,
@@ -185,7 +187,7 @@ const premierLeague = {
     },
     everton: {
       name: "Everton",
-      logo: "",
+      logo: "https://assets.stickpng.com/images/580b57fcd9996e24bc43c4e3.png",
       points: 14,
       winMatch: 3,
       drawMatch: 5,
@@ -209,7 +211,7 @@ const premierLeague = {
     },
     southampton: {
       name: "Southampton",
-      logo: "",
+      logo: "https://upload.wikimedia.org/wikipedia/hif/8/85/FC_Southampton.png",
       points: 12,
       winMatch: 3,
       drawMatch: 3,
@@ -253,6 +255,7 @@ const premierLeague = {
         awayTeamScore: 2,
         dayMatch: "06.11.2022",
         startMatch: "17:30",
+        logoHomeTeam: "",
       },
       2: {
         homeTeam: "Aston Villa",
@@ -269,6 +272,7 @@ const premierLeague = {
         awayTeamScore: 4,
         dayMatch: "06.11.2022",
         startMatch: "15:00",
+        logoAwayTeam: "",
       },
       4: {
         homeTeam: "West Ham",
@@ -285,7 +289,7 @@ const premierLeague = {
         awayTeamScore: 1,
         dayMatch: "06.11.2022",
         startMatch: "13:00",
-        logoAwayTeam:"https://logos-world.net/wp-content/uploads/2020/05/Arsenal-Logo.png",
+        logoAwayTeam: "",
       },
       6: {
         homeTeam: "Everton",
@@ -310,6 +314,8 @@ const premierLeague = {
         awayTeamScore: 1,
         dayMatch: "05.11.2022",
         startMatch: "16:00",
+        logoHomeTeam: "",
+        logoAwayTeam: "",
       },
       9: {
         homeTeam: "Nottingham",
@@ -368,6 +374,7 @@ const premierLeague = {
         awayTeamScore: 3,
         dayMatch: "29.10.2022",
         startMatch: "16:00",
+        logoAwayTeam: "",
       },
       6: {
         homeTeam: "Brendford",
@@ -400,6 +407,7 @@ const premierLeague = {
         awayTeamScore: 0,
         dayMatch: "29.10.2022",
         startMatch: "16:00",
+        logoHomeTeam: "",
       },
       10: {
         homeTeam: "Leicester",
@@ -408,6 +416,8 @@ const premierLeague = {
         awayTeamScore: 1,
         dayMatch: "29.10.2022",
         startMatch: "13:30",
+        logoAwayTeam: "",
+        logoHomeTeam: "",
       },
     },
     matchDay13: {
@@ -426,6 +436,8 @@ const premierLeague = {
         awayTeamScore: 2,
         dayMatch: "23.10.2022",
         startMatch: "17:30",
+        logoAwayTeam: "",
+        logoHomeTeam: "",
       },
       3: {
         homeTeam: "Aston Villa",
@@ -482,6 +494,7 @@ const premierLeague = {
         awayTeamScore: 1,
         dayMatch: "23.10.2022",
         startMatch: "16:00",
+        logoHomeTeam: "",
       },
       10: {
         homeTeam: "Nottingham",
@@ -500,7 +513,7 @@ const premierLeague = {
         awayTeam: "Brendford",
         dayMatch: "12.11.22",
         startMatch: "13:30",
-        logoHomeTeam:"https://w1.pngwing.com/pngs/203/356/png-transparent-premier-league-logo-manchester-manchester-city-fc-organization-line-area-circle-symbol.png",
+        logoHomeTeam: "",
       },
       2: {
         homeTeam: "Bournemouth",
@@ -525,6 +538,7 @@ const premierLeague = {
         awayTeam: "Leeds",
         dayMatch: "12.11.22",
         startMatch: "16:00",
+        logoHomeTeam: "",
       },
       6: {
         homeTeam: "West Ham",
@@ -537,13 +551,14 @@ const premierLeague = {
         awayTeam: "Chelsea",
         dayMatch: "12.11.22",
         startMatch: "18:30",
+        logoHomeTeam: "",
       },
       8: {
         homeTeam: "Wolverhampton",
         awayTeam: "Arsenal",
         dayMatch: "12.11.22",
         startMatch: "20:45",
-        logoAwayTeam:"https://logos-world.net/wp-content/uploads/2020/05/Arsenal-Logo.png",
+        logoAwayTeam: "",
       },
       9: {
         homeTeam: "Brighton",
@@ -564,6 +579,7 @@ const premierLeague = {
         awayTeam: "Tottenham",
         dayMatch: "26.11.22",
         startMatch: "13:30",
+        logoAwayTeam: "",
       },
       2: {
         homeTeam: "Crystal Palace",
@@ -582,6 +598,7 @@ const premierLeague = {
         awayTeam: "Newcastle",
         dayMatch: "26.11.22",
         startMatch: "16:00",
+        logoAwayTeam: "",
       },
       5: {
         homeTeam: "Southampton",
@@ -600,7 +617,7 @@ const premierLeague = {
         awayTeam: "West Ham",
         dayMatch: "26.11.22",
         startMatch: "21:00",
-        logoHomeTeam:"https://logos-world.net/wp-content/uploads/2020/05/Arsenal-Logo.png",
+        logoHomeTeam: "",
       },
       8: {
         homeTeam: "Chelsea",
@@ -619,6 +636,7 @@ const premierLeague = {
         awayTeam: "Manchester City",
         dayMatch: "27.11.22",
         startMatch: "21:00",
+        logoAwayTeam: "",
       },
     },
   },

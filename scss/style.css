@@ -246,8 +246,8 @@ main .matches .league .premier-league-match .match .away {
   height: 50%;
 }
 main .matches .league .premier-league-match .match .away img {
-  width: 10%;
-  padding: 5px;
+  width: 6%;
+  padding: 3px;
 }
 main .matches .league .premier-league-match .info-match {
   display: flex;

@@ -112,6 +112,13 @@ nav .item .desc {
 nav .favourites {
   position: relative;
   height: 100%;
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav .favourites .image i {
+  font-size: 24px;
 }
 nav .favourites .amount-fav {
   background-color: gray;

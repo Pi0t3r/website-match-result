@@ -91,16 +91,27 @@ nav .active {
 }
 nav .item {
   text-align: center;
-  padding: 17px 0;
+  padding: 9px 0;
+  width: 20%;
+  height: 100%;
 }
-nav .item i {
-  font-size: 20px;
+nav .item .image {
+  display: flex;
+  justify-content: center;
+}
+nav .item img {
+  width: 60%;
+}
+nav .item #serieA {
+  margin-top: -20%;
+  width: 178%;
 }
 nav .item .desc {
   margin-top: 5px;
 }
 nav .favourites {
   position: relative;
+  height: 100%;
 }
 nav .favourites .amount-fav {
   background-color: gray;
@@ -226,28 +237,29 @@ main .matches .league .premier-league-match .favourites-match {
 }
 main .matches .league .premier-league-match .match {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 80%;
+  align-items: center;
 }
 main .matches .league .premier-league-match .match .home {
-  width: 100%;
+  width: 50%;
   height: 50%;
   display: flex;
   flex-direction: row;
 }
 main .matches .league .premier-league-match .match .home img {
-  width: 10%;
-  padding: 5px;
+  width: 20%;
+  height: 100%;
 }
 main .matches .league .premier-league-match .match .away {
+  width: 50%;
+  height: 50%;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 50%;
 }
 main .matches .league .premier-league-match .match .away img {
-  width: 6%;
-  padding: 3px;
+  width: 20%;
+  height: 100%;
 }
 main .matches .league .premier-league-match .info-match {
   display: flex;

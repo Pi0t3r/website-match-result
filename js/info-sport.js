@@ -29,7 +29,7 @@ const premierLeague = {
     },
     newcastle: {
       name: "Newcastle",
-      logo: "",
+      logo: "https://i.pinimg.com/236x/59/4d/c0/594dc0283fd972783be5a174ab25e999.jpg",
       points: 27,
       winMatch: 7,
       drawMatch: 6,
@@ -67,7 +67,7 @@ const premierLeague = {
     },
     brighton: {
       name: "Brighton",
-      logo: "",
+      logo: "https://i.pinimg.com/236x/18/2b/82/182b82bb493016db7f76fd913a974340.jpg",
       points: 21,
       winMatch: 6,
       drawMatch: 3,
@@ -79,7 +79,7 @@ const premierLeague = {
     },
     chelsea: {
       name: "Chelsea",
-      logo: "",
+      logo: "https://2.bp.blogspot.com/-M8ocEBMK9X4/XERkQGsjfKI/AAAAAAAAHBc/XppEKbqhWVk7EB3VwxCn-IvCO1GUFFajgCK4BGAYYCw/s640/Logo%2BChelsea.png",
       points: 21,
       winMatch: 6,
       drawMatch: 3,
@@ -91,7 +91,7 @@ const premierLeague = {
     },
     liverpool: {
       name: "Liverpool",
-      logo: "",
+      logo: "https://www.pngfind.com/pngs/m/345-3458090_football-yesterday-today-liverpool-fc-xi-in-european.png",
       points: 19,
       winMatch: 5,
       drawMatch: 4,
@@ -151,7 +151,7 @@ const premierLeague = {
     },
     astonVilla: {
       name: "Aston Villa",
-      logo: "",
+      logo: "../images/b4ebacdc13e9112458f5ac0748733249_preview_rev_1.png",
       points: 15,
       winMatch: 4,
       drawMatch: 3,
@@ -163,7 +163,7 @@ const premierLeague = {
     },
     leicester: {
       name: "Leicester",
-      logo: "",
+      logo: "../images/d6466c15d05bc8ed1397590bf1b9d06e_preview_rev_1.png",
       points: 14,
       winMatch: 4,
       drawMatch: 2,
@@ -175,7 +175,7 @@ const premierLeague = {
     },
     westHam: {
       name: "West Ham",
-      logo: "",
+      logo: "https://4.bp.blogspot.com/-zFUojQA1aOo/XIwf2ZT8mZI/AAAAAAAAJA0/LHtM_nJ_MlQFcvHGyNIeRlG6n8381aIUQCK4BGAYYCw/s640/logo%2Bwest%2Bham%2Bunited%2Bfc.png",
       points: 14,
       winMatch: 4,
       drawMatch: 2,
@@ -199,7 +199,7 @@ const premierLeague = {
     },
     bournemouth: {
       name: "Bournemouth",
-      logo: "",
+      logo: "https://1000logos.net/wp-content/uploads/2018/06/AFC-Bournemouth-Logo-768x432.png",
       points: 13,
       winMatch: 3,
       drawMatch: 4,
@@ -223,7 +223,7 @@ const premierLeague = {
     },
     wolverhamton: {
       name: "Wolverhampton",
-      logo: "",
+      logo: "https://logodownload.org/wp-content/uploads/2019/04/wolverhampton-logo-escudo.png",
       points: 10,
       winMatch: 2,
       drawMatch: 4,
@@ -235,7 +235,7 @@ const premierLeague = {
     },
     nottingham: {
       name: "Nottingham Forest",
-      logo: "",
+      logo: "https://i.pinimg.com/236x/85/58/5c/85585c9a56858bb7f97a6c7500e638c8.jpg",
       points: 10,
       winMatch: 2,
       drawMatch: 4,

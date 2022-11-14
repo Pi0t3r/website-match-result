@@ -27,30 +27,12 @@ function setDay() {
   }
 }
 setDay();
-function switchDay() {
-  switch (day.getDay()) {
-    case 1:
-      inputDayWeek.innerHTML = "PO";
-      break;
-    case 2:
-      inputDayWeek.innerHTML = "WT";
-      break;
-    case 3:
-      inputDayWeek.innerHTML = "ŚR";
-      break;
-    case 4:
-      inputDayWeek.innerHTML = "CZ";
-      break;
-    case 5:
-      inputDayWeek.innerHTML = "PT";
-      break;
-    case 6:
-      inputDayWeek.innerHTML = "SO";
-      break;
-    case 0:
-      inputDayWeek.innerHTML = "NI";
-      break;
-  }
+
+function switchDay(){
+  const options = {weekday: 'short'}
+  let stringDate =  day.toLocaleDateString('pl-PL', options).toString();
+  stringDate = stringDate.slice(0,2).toUpperCase()
+  inputDayWeek.innerHTML = stringDate
 }
 switchDay();
 function getPreviousDay() {
@@ -72,8 +54,5 @@ function setNextDay() {
 }
 nextDayBtn.addEventListener("click", setNextDay);
 previousDayBtn.addEventListener("click", setPrevDay);
-
-
-
 
 

@@ -1,4 +1,5 @@
 import premierLeague from "./info-sport.js";
+const matchElement = document.querySelector(".league");
 for (
   let i = 1;
   i <= Object.keys(premierLeague["fixtures"]["matchday16"]).length;
@@ -31,6 +32,7 @@ for (
                 </div>
                 
               </div>`;
+
     matchElement.appendChild(matchPremierLeague);
   }
   switch (premierLeague["fixtures"]["matchday16"][i]["awayTeam"]) {
@@ -199,3 +201,17 @@ for (
   }
   showMatches(i * Object.keys(premierLeague["fixtures"]["matchday16"]).length);
 }
+
+let childrenElementMatch = matchElement.children;
+console.log(childrenElementMatch);
+// for(let i of childrenElementMatch){
+//   console.log(i)
+// }
+// childrenElementMatch.forEach((item) => {
+//   console.log(item);
+//   // if(item.clientHeight === 50){
+//   //   console.log(item)
+//   // }else{
+//   //   console.log('ni mo')
+//   // }
+// });

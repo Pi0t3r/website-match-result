@@ -17,7 +17,7 @@ const premierLeague = {
     },
     manCity: {
       name: "Manchester City",
-      logo: "https://i.pinimg.com/originals/ce/da/77/ceda77586409fc9df97873db960c260e.png",
+      logo: "https://4.bp.blogspot.com/-ZZdMgc69gPA/XIwlVVh0qJI/AAAAAAAAJBw/__tN6lfBpp8TTIGvdctchaYr_gneExM8gCK4BGAYYCw/s640/logo%2Bmanchester%2Bcity%2Bfc.png",
       points: 32,
       winMatch: 10,
       drawMatch: 2,
@@ -91,7 +91,7 @@ const premierLeague = {
     },
     liverpool: {
       name: "Liverpool",
-      logo: "https://www.pngfind.com/pngs/m/345-3458090_football-yesterday-today-liverpool-fc-xi-in-european.png",
+      logo: "https://www.freelogovectors.net/wp-content/uploads/2021/09/liverpoolfc-logo-freelogovectors.net_-305x400.png",
       points: 19,
       winMatch: 5,
       drawMatch: 4,
@@ -187,7 +187,7 @@ const premierLeague = {
     },
     everton: {
       name: "Everton",
-      logo: "https://assets.stickpng.com/images/580b57fcd9996e24bc43c4e3.png",
+      logo: "https://2.bp.blogspot.com/-4xYzRmByPME/XIwkGmDhfRI/AAAAAAAAJBk/089OrBvG3rk55gS4j5YHGJ7DQOLuBaDLgCK4BGAYYCw/s640/logo%2Beverton%2Bfc%2Bicon.png",
       points: 14,
       winMatch: 3,
       drawMatch: 5,
@@ -539,6 +539,7 @@ const premierLeague = {
         dayMatch: "12.11.22",
         startMatch: "16:00",
         logoHomeTeam: "",
+        logoAwayTeam: "",
       },
       6: {
         homeTeam: "West Ham",

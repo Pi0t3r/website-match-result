@@ -190,6 +190,9 @@ main .matches {
   display: flex;
   flex-direction: column;
 }
+main .matches .league {
+  background-color: white;
+}
 main .matches .league .league-name .league-title {
   display: flex;
   flex-direction: row;

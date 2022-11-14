@@ -7,6 +7,7 @@ const elements = [
 ];
 const previousDayBtn = document.querySelector("#previous-day");
 const nextDayBtn = document.querySelector("#next-day");
+
 let day = new Date();
 elements.forEach((items) => {
   const toggle = (e) => {
@@ -71,3 +72,8 @@ function setNextDay() {
 }
 nextDayBtn.addEventListener("click", setNextDay);
 previousDayBtn.addEventListener("click", setPrevDay);
+
+
+
+
+

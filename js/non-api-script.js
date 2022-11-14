@@ -1,6 +1,4 @@
 import premierLeague from "./info-sport.js";
-const matchElement = document.querySelector(".league");
-
 for (
   let i = 1;
   i <= Object.keys(premierLeague["fixtures"]["matchday16"]).length;
@@ -124,8 +122,7 @@ for (
         premierLeague["teams"]["arsenal"]["logo"];
       break;
     case "Tottenham":
-      premierLeague["fixtures"]["matchday16"][i]["logoHomeTeam"] =
-        'chujnik'
+      premierLeague["fixtures"]["matchday16"][i]["logoHomeTeam"] = "chujnik";
       break;
     case "Brendford":
       premierLeague["fixtures"]["matchday16"][i]["logoHomeTeam"] =

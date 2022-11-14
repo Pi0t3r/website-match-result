@@ -42,7 +42,7 @@ const premierLeague = {
     },
     tottenham: {
       name: "Tottenham",
-      logo: "",
+      logo: "../images/tottenhamhotspur-football-club-logo_logoeps.net_-422x1030.png",
       points: 26,
       winMatch: 8,
       drawMatch: 2,
@@ -235,7 +235,7 @@ const premierLeague = {
     },
     nottingham: {
       name: "Nottingham Forest",
-      logo: "https://i.pinimg.com/236x/85/58/5c/85585c9a56858bb7f97a6c7500e638c8.jpg",
+      logo: "../images/nottingham.png",
       points: 10,
       winMatch: 2,
       drawMatch: 4,
@@ -511,7 +511,8 @@ const premierLeague = {
       1: {
         homeTeam: "Manchester City",
         awayTeam: "Brendford",
-        dayMatch: "12.11.22",
+        dayMatch: "12",
+        monthMatch:"11",
         startMatch: "13:30",
         logoHomeTeam: "",
       },

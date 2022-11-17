@@ -53,22 +53,19 @@ function setNextDay() {
   getNextDay();
 }
 const toggleArrow = document.querySelector(".togglingArrow");
-let todayMatch = document.querySelectorAll('.today-match')
-todayMatch.forEach((item) => {
-  console.log(item)
-})
+let listMatches = document.querySelector(".list-matches");
+
 function hideAndShowListMatch() {
   if (toggleArrow.classList.contains("fa-chevron-up")) {
     toggleArrow.classList.remove("fa-chevron-up");
     toggleArrow.classList.add("fa-chevron-down");
+    listMatches.classList.remove("none");
   } else {
     toggleArrow.classList.remove("fa-chevron-down");
     toggleArrow.classList.add("fa-chevron-up");
+    listMatches.classList.add("none");
   }
 }
-
-document
-  .querySelector(".fa-chevron-up")
-  .addEventListener("click", hideAndShowListMatch);
+toggleArrow.addEventListener("click", hideAndShowListMatch);
 nextDayBtn.addEventListener("click", setNextDay);
 previousDayBtn.addEventListener("click", setPrevDay);

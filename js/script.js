@@ -28,11 +28,11 @@ function setDay() {
 }
 setDay();
 
-function switchDay(){
-  const options = {weekday: 'short'}
-  let stringDate =  day.toLocaleDateString('pl-PL', options).toString();
-  stringDate = stringDate.slice(0,2).toUpperCase()
-  inputDayWeek.innerHTML = stringDate
+function switchDay() {
+  const options = { weekday: "short" };
+  let stringDate = day.toLocaleDateString("pl-PL", options).toString();
+  stringDate = stringDate.slice(0, 2).toUpperCase();
+  inputDayWeek.innerHTML = stringDate;
 }
 switchDay();
 function getPreviousDay() {
@@ -52,7 +52,23 @@ function setNextDay() {
   setDay();
   getNextDay();
 }
+const toggleArrow = document.querySelector(".togglingArrow");
+let todayMatch = document.querySelectorAll('.today-match')
+todayMatch.forEach((item) => {
+  console.log(item)
+})
+function hideAndShowListMatch() {
+  if (toggleArrow.classList.contains("fa-chevron-up")) {
+    toggleArrow.classList.remove("fa-chevron-up");
+    toggleArrow.classList.add("fa-chevron-down");
+  } else {
+    toggleArrow.classList.remove("fa-chevron-down");
+    toggleArrow.classList.add("fa-chevron-up");
+  }
+}
+
+document
+  .querySelector(".fa-chevron-up")
+  .addEventListener("click", hideAndShowListMatch);
 nextDayBtn.addEventListener("click", setNextDay);
 previousDayBtn.addEventListener("click", setPrevDay);
-
-

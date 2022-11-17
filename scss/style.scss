@@ -13,6 +13,11 @@ body {
   overflow-y: scroll;
 }
 
+
+.none{
+  display: none;
+}
+
 // header
 header {
   background-color: #001e28;
@@ -239,6 +244,9 @@ main {
             display: flex;
             justify-content: center;
             width: 20%;
+            i{
+              padding: 10px;
+            }
           }
         }
       }

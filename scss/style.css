@@ -13,6 +13,10 @@ body {
   overflow-y: scroll;
 }
 
+.none {
+  display: none;
+}
+
 header {
   background-color: #001e28;
   color: white;
@@ -232,6 +236,9 @@ main .matches .league .league-name .league-title .wrapping-curling-league {
   display: flex;
   justify-content: center;
   width: 20%;
+}
+main .matches .league .league-name .league-title .wrapping-curling-league i {
+  padding: 10px;
 }
 main .matches .league .premier-league-match {
   width: 100%;

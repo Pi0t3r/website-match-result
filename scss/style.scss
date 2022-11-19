@@ -12,9 +12,7 @@ body {
   font-family: "Quicksand", sans-serif;
   overflow-y: scroll;
 }
-.none {
-  display: none;
-}
+
 // header
 header {
   background-color: #001e28;
@@ -247,6 +245,9 @@ main {
             }
           }
         }
+      }
+      .none {
+        display: none;
       }
       .premier-league-match {
         width: 100%;

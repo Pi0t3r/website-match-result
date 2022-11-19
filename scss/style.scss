@@ -101,6 +101,9 @@ nav {
     height: 100%;
     .image {
       display: flex;
+      height: 100%;
+      margin: auto;
+      align-items: center;
       justify-content: center;
     }
     img {

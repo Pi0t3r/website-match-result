@@ -58,7 +58,7 @@ const serieAIcon = document.querySelector(".SerieA");
 const premierLeagueList = document.querySelector("#premierLeague");
 const laLigaList = document.querySelector("#LaLiga-league");
 const serieAList = document.querySelector("#serieA-league");
-
+const allList = document.querySelector(".all");
 const filterMatchElement = document.querySelectorAll(".item");
 
 filterMatchElement.forEach((item) => {
@@ -77,6 +77,11 @@ filterMatchElement.forEach((item) => {
       serieAList.style.display = "block";
     } else {
       serieAList.style.display = "none";
+    }
+    if (allList.classList.contains("active")) {
+      premierLeagueList.style.display = "block";
+      serieAList.style.display = "block";
+      laLigaList.style.display = "block";
     }
   });
 });

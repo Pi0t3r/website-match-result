@@ -59,8 +59,6 @@ const premierLeagueList = document.querySelector("#premierLeague");
 const laLigaList = document.querySelector("#LaLiga-league");
 const serieAList = document.querySelector("#serieA-league");
 
-function showAndHideOtherLeague() {}
-
 const filterMatchElement = document.querySelectorAll(".item");
 
 filterMatchElement.forEach((item) => {

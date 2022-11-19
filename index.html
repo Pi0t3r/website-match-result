@@ -56,19 +56,18 @@
       </div>
     </header>
     <nav>
-      <div class="favourites item">
+      <div class="all item">
         <div class="image">
           <i class="fa-solid fa-star"></i>
         </div>
-        <div class="amount-fav">0</div>
         <div class="desc">
-          <p>Ulubione</p>
+          <p>Wszystkie</p>
         </div>
       </div>
       <div class="premier-league item active">
         <div class="image">
           <img src="./images/premier_league_preview_rev_1.png" alt="" />
-        </div>     
+        </div>
       </div>
       <div class="La-liga item">
         <div class="image">
@@ -99,10 +98,12 @@
           <i class="fa-regular fa-calendar-days"></i>
           <p><span class="day"></span><span class="day-week"></span></p>
         </div>
-        <button id="next-day" class="pick-day"><i class="fa-solid fa-chevron-right"></i></button>
+        <button id="next-day" class="pick-day">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
       </div>
       <div class="matches">
-        <div class="league">
+        <div class="league" id="premierLeague">
           <div class="league-name">
             <div class="league-title">
               <div class="flag-star">
@@ -114,6 +115,46 @@
               <div class="info-league">
                 <p class="name-league">Premier League</p>
                 <p class="country-league">Anglia</p>
+              </div>
+              <div class="wrapping-curling-league">
+                <i class="fa-solid fa-chevron-down togglingArrow"></i>
+              </div>
+            </div>
+          </div>
+          <div class="list-matches"></div>
+        </div>
+        <div class="league" id="LaLiga-league">
+          <div class="league-name">
+            <div class="league-title">
+              <div class="flag-star">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/240px-Flag_of_England.svg.png"
+                  alt=""
+                />
+              </div>
+              <div class="info-league">
+                <p class="name-league">La Liga</p>
+                <p class="country-league">hiszpania</p>
+              </div>
+              <div class="wrapping-curling-league">
+                <i class="fa-solid fa-chevron-up togglingArrow"></i>
+              </div>
+            </div>
+          </div>
+          <div class="list-matches"></div>
+        </div>
+        <div class="league" id="serieA-league">
+          <div class="league-name">
+            <div class="league-title">
+              <div class="flag-star">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/240px-Flag_of_England.svg.png"
+                  alt=""
+                />
+              </div>
+              <div class="info-league">
+                <p class="name-league">Serie A</p>
+                <p class="country-league">włochy</p>
               </div>
               <div class="wrapping-curling-league">
                 <i class="fa-solid fa-chevron-up togglingArrow"></i>

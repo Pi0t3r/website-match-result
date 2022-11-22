@@ -52,36 +52,3 @@ for (
   );
 }
 
-const premierLeagueIcon = document.querySelector(".premier-league");
-const LaligaIcon = document.querySelector(".La-liga");
-const serieAIcon = document.querySelector(".SerieA");
-const premierLeagueList = document.querySelector("#premierLeague");
-const laLigaList = document.querySelector("#LaLiga-league");
-const serieAList = document.querySelector("#serieA-league");
-const allList = document.querySelector(".all");
-const filterMatchElement = document.querySelectorAll(".item");
-
-filterMatchElement.forEach((item) => {
-  item.addEventListener("click", () => {
-    if (premierLeagueIcon.classList.contains("active")) {
-      premierLeagueList.style.display = "block";
-    } else {
-      premierLeagueList.style.display = "none";
-    }
-    if (LaligaIcon.classList.contains("active")) {
-      laLigaList.style.display = "block";
-    } else {
-      laLigaList.style.display = "none";
-    }
-    if (serieAIcon.classList.contains("active")) {
-      serieAList.style.display = "block";
-    } else {
-      serieAList.style.display = "none";
-    }
-    if (allList.classList.contains("active")) {
-      premierLeagueList.style.display = "block";
-      serieAList.style.display = "block";
-      laLigaList.style.display = "block";
-    }
-  });
-});

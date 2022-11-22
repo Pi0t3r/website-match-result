@@ -85,7 +85,7 @@ nav .image img {
 
 main .filters {
   width: 100%;
-  padding: 10px 2px;
+  padding: 10px 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -192,6 +192,6 @@ main .matches .league .premier-league-match .info-match {
   font-weight: bold;
   padding-right: 5%;
 }
-main .matches .league .premier-league-match .info-match .day-match {
+main .matches .league .premier-league-match .info-match .result {
   display: none;
 }/*# sourceMappingURL=style.css.map */

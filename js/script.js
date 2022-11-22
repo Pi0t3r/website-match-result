@@ -52,5 +52,8 @@ function setNextDay() {
   getNextDay();
 }
 
+
+
+
 nextDayBtn.addEventListener("click", setNextDay);
 previousDayBtn.addEventListener("click", setPrevDay);

@@ -18,7 +18,9 @@ for (
                     <p class="club-name-home">${premierLeague["fixtures"]["currentMatchDays"][i]["homeTeam"]}</p>
                   </div>
                   <div class="info-match">
-                  <p class="start-match">${premierLeague["fixtures"]["currentMatchDays"][i]["dateMatch"]["hour"]}</p></div>
+                    <p class="start-match">${premierLeague["fixtures"]["currentMatchDays"][i]["dateMatch"]["hour"]}</p>
+                    <p class="result">${premierLeague["lastMatchDays"]["LastmatchDay"][i]["homeTeamScore"]}:${premierLeague["lastMatchDays"]["LastmatchDay"][i]["awayTeamScore"]}</p>
+                  </div>
                   <div class="away">
                     <p class="club-name-away">${premierLeague["fixtures"]["currentMatchDays"][i]["awayTeam"]}</p>
                   </div>
@@ -47,8 +49,42 @@ for (
       }
     });
   });
+  function showCurrentMatch() {
+    let child = document.querySelectorAll(".today-match");
+    for (let i of child) {
+      if (
+        i.childNodes[0].childNodes[1].childNodes[1].childNodes[1].innerHTML.slice(
+          0,
+          2
+        ) == inputDay.innerHTML.slice(0, 2)
+      ) {
+        i.childNodes[0].style.display = "block";
+      } else {
+        i.childNodes[0].style.display = "none";
+      }
+    }
+  }
+  addEventListener("load", showCurrentMatch);
+  let day = new Date();
+  let currentHours = day.getHours();
+  let currentMinutes = day.getMinutes();
+  let result = document.querySelector(".result");
+  console.log(result);
+  function showResults() {
+    if (
+      premierLeague["fixtures"]["currentMatchDays"][i]["dateMatch"][
+        "hour"
+      ].slice(0, 2) > currentHours
+    ) {
+      console.log(result);
+      // console.log('jest większe')
+      // document.querySelector(".result").style.display = "block";
+    } else {
+      // console.log("nie jest!");
+    }
+  }
+  showResults();
   showMatches(
     i * Object.keys(premierLeague["fixtures"]["currentMatchDays"]).length
   );
 }
-

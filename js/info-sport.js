@@ -255,7 +255,6 @@ const premierLeague = {
         awayTeamScore: 2,
         dayMatch: "06.11.2022",
         startMatch: "17:30",
-        logoHomeTeam: "",
       },
       2: {
         homeTeam: "Aston Villa",
@@ -272,7 +271,6 @@ const premierLeague = {
         awayTeamScore: 4,
         dayMatch: "06.11.2022",
         startMatch: "15:00",
-        logoAwayTeam: "",
       },
       4: {
         homeTeam: "West Ham",
@@ -289,7 +287,6 @@ const premierLeague = {
         awayTeamScore: 1,
         dayMatch: "06.11.2022",
         startMatch: "13:00",
-        logoAwayTeam: "",
       },
       6: {
         homeTeam: "Everton",
@@ -314,8 +311,6 @@ const premierLeague = {
         awayTeamScore: 1,
         dayMatch: "05.11.2022",
         startMatch: "16:00",
-        logoHomeTeam: "",
-        logoAwayTeam: "",
       },
       9: {
         homeTeam: "Nottingham",
@@ -344,9 +339,8 @@ const premierLeague = {
           day: 19,
           month: 11,
           year: 2022,
-          hour: "16:30",
+          hour: "19:30",
         },
-        logoHomeTeam: "",
       },
       2: {
         homeTeam: "Bournemouth",
@@ -355,7 +349,7 @@ const premierLeague = {
           day: 18,
           month: 11,
           year: 2022,
-          hour: "16:30",
+          hour: "13:30",
         },
       },
       3: {
@@ -365,7 +359,7 @@ const premierLeague = {
           day: 17,
           month: 11,
           year: 2022,
-          hour: "16:30",
+          hour: "15:30",
         },
       },
       4: {
@@ -375,7 +369,7 @@ const premierLeague = {
           day: 17,
           month: 11,
           year: 2022,
-          hour: "16:30",
+          hour: "17:00",
         },
       },
       5: {
@@ -385,10 +379,8 @@ const premierLeague = {
           day: 17,
           month: 11,
           year: 2022,
-          hour: "16:30",
+          hour: "18:53",
         },
-        logoHomeTeam: "",
-        logoAwayTeam: "",
       },
       6: {
         homeTeam: "West Ham",
@@ -407,9 +399,8 @@ const premierLeague = {
           day: 17,
           month: 11,
           year: 2022,
-          hour: "16:30",
+          hour: "11:30",
         },
-        logoHomeTeam: "",
       },
       8: {
         homeTeam: "Wolverhampton",
@@ -418,9 +409,8 @@ const premierLeague = {
           day: 16,
           month: 11,
           year: 2022,
-          hour: "16:30",
+          hour: "10:00",
         },
-        logoAwayTeam: "",
       },
       9: {
         homeTeam: "Brighton",
@@ -429,7 +419,7 @@ const premierLeague = {
           day: 16,
           month: 11,
           year: 2022,
-          hour: "16:30",
+          hour: "09:30",
         },
       },
       10: {
@@ -439,7 +429,7 @@ const premierLeague = {
           day: 16,
           month: 11,
           year: 2022,
-          hour: "16:30",
+          hour: "18:04",
         },
       },
     },
@@ -450,7 +440,6 @@ const premierLeague = {
         dayMatch: "15",
         monthMatch: "11",
         startMatch: "13:30",
-        logoAwayTeam: "",
       },
       2: {
         homeTeam: "Crystal Palace",
@@ -472,7 +461,6 @@ const premierLeague = {
         dayMatch: "15",
         monthMatch: "11",
         startMatch: "16:00",
-        logoAwayTeam: "",
       },
       5: {
         homeTeam: "Southampton",
@@ -494,7 +482,6 @@ const premierLeague = {
         dayMatch: "15",
         monthMatch: "11",
         startMatch: "21:00",
-        logoHomeTeam: "",
       },
       8: {
         homeTeam: "Chelsea",
@@ -516,10 +503,10 @@ const premierLeague = {
         dayMatch: "16",
         monthMatch: "11",
         startMatch: "21:00",
-        logoAwayTeam: "",
       },
     },
   },
 };
+
 
 export default premierLeague;

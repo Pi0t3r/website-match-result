@@ -65,6 +65,11 @@ for (
     }
   }
   addEventListener("load", showCurrentMatch);
+  const matchEndAllNext = [
+    document.querySelector("#next"),
+    document.querySelector("#ended"),
+    document.querySelector("#all"),
+  ];
   let day = new Date();
   let currentHours = day.getHours();
   let currentMinutes = day.getMinutes();
@@ -72,16 +77,38 @@ for (
   const resultMatch = document.querySelector(".result");
   function showEndedMatch() {
     if (document.querySelector("#ended").classList.contains("active")) {
-      if (result.length >= 8) {
-        for (let i = 0; i < result.length; i++) {
-          if (result[i].innerHTML.slice(0, 2) < currentHours) {
-            child.style.display = "none";
-          }
+      child.forEach((item) => {
+        if (
+          item.children[0].children[0].children[2].children[0].innerHTML.slice(
+            0,
+            2
+          ) < currentHours
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
         }
-      }
+      });
+    }
+    if (document.querySelector("#next").classList.contains("active")) {
+      child.forEach((item) => {
+        if (
+          item.children[0].children[0].children[2].children[0].innerHTML.slice(
+            0,
+            2
+          ) > currentHours
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
     }
   }
-  document.querySelector("#ended").addEventListener("click", showEndedMatch);
+  // document.querySelector("#ended").addEventListener("click", showEndedMatch);
+  matchEndAllNext.forEach((btn) => {
+    btn.addEventListener("click", showEndedMatch);
+  });
   function showResults() {
     if (
       premierLeague["fixtures"]["currentMatchDays"][i]["dateMatch"][

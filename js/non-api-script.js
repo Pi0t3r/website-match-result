@@ -49,8 +49,8 @@ for (
       }
     });
   });
+  let child = document.querySelectorAll(".today-match");
   function showCurrentMatch() {
-    let child = document.querySelectorAll(".today-match");
     for (let i of child) {
       if (
         i.childNodes[0].childNodes[1].childNodes[1].childNodes[1].innerHTML.slice(
@@ -68,19 +68,32 @@ for (
   let day = new Date();
   let currentHours = day.getHours();
   let currentMinutes = day.getMinutes();
-  let result = document.querySelector(".result");
-  console.log(result);
+  const result = document.querySelectorAll(".start-match");
+  const resultMatch = document.querySelector(".result");
+  function showEndedMatch() {
+    if (document.querySelector("#ended").classList.contains("active")) {
+      if (result.length >= 8) {
+        for (let i = 0; i < result.length; i++) {
+          if (result[i].innerHTML.slice(0, 2) < currentHours) {
+            child.style.display = "none";
+          }
+        }
+      }
+    }
+  }
+  document.querySelector("#ended").addEventListener("click", showEndedMatch);
   function showResults() {
     if (
       premierLeague["fixtures"]["currentMatchDays"][i]["dateMatch"][
         "hour"
       ].slice(0, 2) > currentHours
     ) {
-      console.log(result);
+      // console.log(result);
       // console.log('jest większe')
-      // document.querySelector(".result").style.display = "block";
+      // document.querySelector(".result").innerHTML = 'po meczu!'
     } else {
       // console.log("nie jest!");
+      // document.querySelector(".result").innerHTML = 'przed meczem!'
     }
   }
   showResults();

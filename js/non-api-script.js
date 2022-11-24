@@ -15,7 +15,7 @@ for (
                     <p>${premierLeague["fixtures"]["currentMatchDays"][i]["dateMatch"]["day"]}/${premierLeague["fixtures"]["currentMatchDays"][i]["dateMatch"]["month"]} </p>
                   </div>
                   <div class="home">
-                    <p class="club-name-home">${premierLeague["fixtures"]["currentMatchDays"][i]["homeTeam"]}</p>
+                  <p class="club-name-home">${premierLeague["fixtures"]["currentMatchDays"][i]["homeTeam"]}</p>
                   </div>
                   <div class="info-match">
                     <p class="start-match">${premierLeague["fixtures"]["currentMatchDays"][i]["dateMatch"]["hour"]}</p>
@@ -23,15 +23,16 @@ for (
                   </div>
                   <div class="away">
                     <p class="club-name-away">${premierLeague["fixtures"]["currentMatchDays"][i]["awayTeam"]}</p>
-                  </div>
-                  <div class="show-this-match">
+                    </div>
+                    <div class="show-this-match">
                     <p><i class="fa-solid fa-eye"></i></p>
                   </div>
                 </div>
                 
-              </div>`;
+                </div>`;
     matchElement.appendChild(matchPremierLeague);
   }
+
   pickDate.forEach((btn) => {
     btn.addEventListener("click", () => {
       let child = document.querySelectorAll(".today-match");
@@ -49,7 +50,7 @@ for (
       }
     });
   });
-
+  let child = document.querySelectorAll(".today-match");
   function showCurrentMatch() {
     for (let i of child) {
       if (
@@ -83,14 +84,14 @@ function showHours() {
     hours.style.display = "block";
   });
 }
-function hideResult() {
-  document.querySelectorAll(".result").forEach((results) => {
-    results.style.display = "none";
-  });
-}
 function hideHours() {
   document.querySelectorAll(".start-match").forEach((hours) => {
     hours.style.display = "none";
+  });
+}
+function hideResult() {
+  document.querySelectorAll(".result").forEach((results) => {
+    results.style.display = "none";
   });
 }
 function showResult() {
@@ -98,7 +99,7 @@ function showResult() {
     results.style.display = "block";
   });
 }
-function showEndedMatch() {
+function showFilteredMatch() {
   if (document.querySelector("#ended").classList.contains("active")) {
     child.forEach((item) => {
       if (
@@ -108,16 +109,10 @@ function showEndedMatch() {
         ) < currentHours
       ) {
         item.style.display = "block";
-        document.querySelectorAll(".start-match").forEach((hours) => {
-          hours.style.display = "none";
-        });
-        document.querySelectorAll(".result").forEach((results) => {
-          results.style.display = "block";
-        });
+        hideHours();
+        showResult();
       } else {
         item.style.display = "none";
-        showHours();
-        hideResult();
       }
     });
   }
@@ -145,20 +140,22 @@ function showEndedMatch() {
         item.children[0].children[0].children[2].children[0].innerHTML.slice(
           0,
           2
-        ) > currentHours
+        ) < currentHours
       ) {
-        console.log("jest większe niż obecna godzina");
-        hideHours();
-        showResult();
+        item.children[0].children[0].children[2].children[1].style.display =
+          "block";
+        item.children[0].children[0].children[2].children[0].style.display =
+          "none";
       } else {
-        console.log("jest mniejsze niż obecna godzina");
-        hideResult();
-        showHours();
+        item.children[0].children[0].children[2].children[1].style.display =
+          "none";
+        item.children[0].children[0].children[2].children[0].style.display =
+          "block";
       }
     });
   }
 }
 
 matchEndAllNext.forEach((btn) => {
-  btn.addEventListener("click", showEndedMatch);
+  btn.addEventListener("click", showFilteredMatch);
 });

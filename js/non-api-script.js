@@ -49,7 +49,7 @@ for (
       }
     });
   });
-  let child = document.querySelectorAll(".today-match");
+
   function showCurrentMatch() {
     for (let i of child) {
       if (
@@ -65,61 +65,100 @@ for (
     }
   }
   addEventListener("load", showCurrentMatch);
-  const matchEndAllNext = [
-    document.querySelector("#next"),
-    document.querySelector("#ended"),
-    document.querySelector("#all"),
-  ];
-  let day = new Date();
-  let currentHours = day.getHours();
-  function showEndedMatch() {
-    if (document.querySelector("#ended").classList.contains("active")) {
-      child.forEach((item) => {
-        if (
-          item.children[0].children[0].children[2].children[0].innerHTML.slice(
-            0,
-            2
-          ) < currentHours
-        ) {
-          item.style.display = "block";
-          document.querySelectorAll(".start-match").forEach((hours) => {
-            hours.style.display = "none";
-          });
-          document.querySelectorAll('.result').forEach((results) => {
-            results.style.display = "block";
-          })
-          // console.log(item.children[0].children[0].children[2].children[1].innerHTML)
-          // console.log(item.children[0].children[0].children[2].children[0].innerHTML)
-        } else {
-          item.style.display = "none";
-        }
-      });
-    }
-    if (document.querySelector("#next").classList.contains("active")) {
-      child.forEach((item) => {
-        if (
-          item.children[0].children[0].children[2].children[0].innerHTML.slice(
-            0,
-            2
-          ) > currentHours
-        ) {
-          item.style.display = "block";
-        } else {
-          item.style.display = "none";
-        }
-      });
-    }
-    if (document.querySelector("#all").classList.contains("active")) {
-      child.forEach((item) => {
-        item.style.display = "block";
-      });
-    }
-  }
 
-  matchEndAllNext.forEach((btn) => {
-    btn.addEventListener("click", showEndedMatch);
-  });
   showMatches(
     i * Object.keys(premierLeague["fixtures"]["currentMatchDays"]).length
   );
 }
+let child = document.querySelectorAll(".today-match");
+const matchEndAllNext = [
+  document.querySelector("#next"),
+  document.querySelector("#ended"),
+  document.querySelector("#all"),
+];
+let day = new Date();
+let currentHours = day.getHours();
+function showHours() {
+  document.querySelectorAll(".start-match").forEach((hours) => {
+    hours.style.display = "block";
+  });
+}
+function hideResult() {
+  document.querySelectorAll(".result").forEach((results) => {
+    results.style.display = "none";
+  });
+}
+function hideHours() {
+  document.querySelectorAll(".start-match").forEach((hours) => {
+    hours.style.display = "none";
+  });
+}
+function showResult() {
+  document.querySelectorAll(".result").forEach((results) => {
+    results.style.display = "block";
+  });
+}
+function showEndedMatch() {
+  if (document.querySelector("#ended").classList.contains("active")) {
+    child.forEach((item) => {
+      if (
+        item.children[0].children[0].children[2].children[0].innerHTML.slice(
+          0,
+          2
+        ) < currentHours
+      ) {
+        item.style.display = "block";
+        document.querySelectorAll(".start-match").forEach((hours) => {
+          hours.style.display = "none";
+        });
+        document.querySelectorAll(".result").forEach((results) => {
+          results.style.display = "block";
+        });
+      } else {
+        item.style.display = "none";
+        showHours();
+        hideResult();
+      }
+    });
+  }
+
+  if (document.querySelector("#next").classList.contains("active")) {
+    child.forEach((item) => {
+      if (
+        item.children[0].children[0].children[2].children[0].innerHTML.slice(
+          0,
+          2
+        ) > currentHours
+      ) {
+        item.style.display = "block";
+        showHours();
+      } else {
+        item.style.display = "none";
+        hideResult();
+      }
+    });
+  }
+  if (document.querySelector("#all").classList.contains("active")) {
+    child.forEach((item) => {
+      item.style.display = "block";
+      if (
+        item.children[0].children[0].children[2].children[0].innerHTML.slice(
+          0,
+          2
+        ) > currentHours
+      ) {
+        console.log("jest większe niż obecna godzina");
+        hideHours();
+        showResult();
+      } else {
+        console.log("jest mniejsze niż obecna godzina");
+        hideResult();
+        showHours();
+      }
+    });
+  }
+}
+
+matchEndAllNext.forEach((btn) => {
+  btn.addEventListener("click", showEndedMatch);
+});

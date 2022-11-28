@@ -52,8 +52,15 @@ function setNextDay() {
   getNextDay();
 }
 
-
-
-
+const burgerMenu = document.querySelector("#btn-side-menu");
+const closeMenu = document.querySelector("#close");
+function showSideMenu() {
+  document.querySelector(".side-menu").classList.add("toggleSide");
+}
+function hideSideMenu() {
+  document.querySelector(".side-menu").classList.remove("toggleSide");
+}
+closeMenu.addEventListener("click", hideSideMenu);
+burgerMenu.addEventListener("click", showSideMenu);
 nextDayBtn.addEventListener("click", setNextDay);
 previousDayBtn.addEventListener("click", setPrevDay);

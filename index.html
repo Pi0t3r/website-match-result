@@ -21,6 +21,7 @@
     <script type="module" src="./js/info-sport.js"></script>
   </head>
   <body>
+    
     <header>
       <div class="short-description">
         <p>Wyniki Premier League</p>
@@ -39,8 +40,9 @@
         <div class="right-side">
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
           <button><i class="fa-regular fa-user"></i></button>
-          <button><i class="fa-solid fa-bars"></i></button>
+          <button id="btn-side-menu"><i class="fa-solid fa-bars"></i></button>
         </div>
+        
       </div>
       <div class="header-items">
         <div class="results navigation active">
@@ -55,6 +57,20 @@
         </div>
       </div>
     </header>
+    <div class="side-menu">
+      <div class="top-menu">
+        <i id="close" class="fa-solid fa-x"></i>
+      </div>
+      <div class="list-menu">
+        <div class="theme">
+          <p>Tryb ciemny</p>
+          <span class="switch">
+            <input type="checkbox" id="switch-round">
+            <label for="switch-round"></label>
+          </span>
+        </div>
+      </div>
+    </div>
     <nav>
       <div class="premier-league">
         <div class="image">
@@ -66,6 +82,7 @@
       </div>
     </nav>
     <main>
+      
       <div class="filters">
         <button class="btn-filter" id="all">Wszystkie</button>
         <button class="btn-filter" id="ended">Zakończone</button>

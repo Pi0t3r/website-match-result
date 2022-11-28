@@ -333,7 +333,7 @@ const premierLeague = {
   fixtures: {
     currentMatchDays: {
       1: {
-        homeTeam: "Manchester City",
+        homeTeam: "Man City",
         awayTeam: "Brendford",
         dateMatch: {
           day: 28,
@@ -424,7 +424,7 @@ const premierLeague = {
       },
       10: {
         homeTeam: "Fullham",
-        awayTeam: "Manchester United",
+        awayTeam: "Man Utd",
         dateMatch: {
           day: 28,
           month: 11,

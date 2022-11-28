@@ -7,8 +7,8 @@
 }
 
 body {
-  max-width: 1200px;
-  overflow: hidden;
+  max-width: 375px;
+  overflow-x: hidden;
   font-family: "Quicksand", sans-serif;
   overflow-y: scroll;
 }
@@ -28,6 +28,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 8px;
+    overflow: hidden;
     .left-side {
       width: 50%;
       .title {
@@ -54,6 +55,7 @@ header {
         border-radius: 8px;
       }
     }
+    
   }
   .header-items {
     display: flex;
@@ -89,9 +91,63 @@ nav {
     }
   }
 }
-
+.side-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  width: 40%;
+  height: 100vh;
+  z-index: 100;
+  transform: translateX(102%);
+  transition: transform .4s;
+  .top-menu{
+    position: relative;
+    top: 0;
+    #close{
+      padding: 10px;
+      position: absolute;
+      right: 0;
+    }
+  }
+  .list-menu{
+    position: relative;
+    top: 5%;
+    padding: 15px;
+    .theme{
+      .switch input{
+        display: none;
+      }
+      .switch label{
+        display: block;
+        width: 60px;
+        height: 30px;
+        padding: 3px;
+        border-radius: 15px;
+        border: 2px solid #7e8382;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .switch label::after{
+        content: '';
+        display: inherit;
+        width: 20px;
+        height: 20px;
+        border-radius: 12px;
+        background: #7e8382;
+        transition: .3s;
+      }
+    }
+  }
+}
+.toggleSide{
+  transform: translateX(0);
+}
 // MAIN
 main {
+  position: relative;
+  overflow: hidden;
+  
   .filters {
     width: 100%;
     padding: 10px 20px;
@@ -197,7 +253,7 @@ main {
           align-items: center;
           font-weight: bold;
           padding-right: 5%;
-          .result{
+          .result {
             display: none;
           }
         }

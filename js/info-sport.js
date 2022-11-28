@@ -336,7 +336,7 @@ const premierLeague = {
         homeTeam: "Manchester City",
         awayTeam: "Brendford",
         dateMatch: {
-          day: 24,
+          day: 28,
           month: 11,
           year: 2022,
           hour: "19:00",
@@ -346,7 +346,7 @@ const premierLeague = {
         homeTeam: "Bournemouth",
         awayTeam: "Everton",
         dateMatch: {
-          day: 24,
+          day: 28,
           month: 11,
           year: 2022,
           hour: "20:00",
@@ -356,7 +356,7 @@ const premierLeague = {
         homeTeam: "Liverpool",
         awayTeam: "Southampton",
         dateMatch: {
-          day: 24,
+          day: 28,
           month: 11,
           year: 2022,
           hour: "22:00",
@@ -366,7 +366,7 @@ const premierLeague = {
         homeTeam: "Nottingham",
         awayTeam: "Crystal Palace",
         dateMatch: {
-          day: 24,
+          day: 28,
           month: 11,
           year: 2022,
           hour: "17:00",
@@ -376,7 +376,7 @@ const premierLeague = {
         homeTeam: "Tottenham",
         awayTeam: "Leeds",
         dateMatch: {
-          day: 24,
+          day: 28,
           month: 11,
           year: 2022,
           hour: "18:00",
@@ -386,7 +386,7 @@ const premierLeague = {
         homeTeam: "West Ham",
         awayTeam: "Leicester",
         dateMatch: {
-          day: 24,
+          day: 28,
           month: 11,
           year: 2022,
           hour: "16:00",
@@ -396,7 +396,7 @@ const premierLeague = {
         homeTeam: "Newcastle",
         awayTeam: "Chelsea",
         dateMatch: {
-          day: 24,
+          day: 28,
           month: 11,
           year: 2022,
           hour: "11:00",
@@ -406,7 +406,7 @@ const premierLeague = {
         homeTeam: "Wolverhampton",
         awayTeam: "Arsenal",
         dateMatch: {
-          day: 24,
+          day: 28,
           month: 11,
           year: 2022,
           hour: "10:00",
@@ -416,7 +416,7 @@ const premierLeague = {
         homeTeam: "Brighton",
         awayTeam: "Aston Villa",
         dateMatch: {
-          day: 24,
+          day: 28,
           month: 11,
           year: 2022,
           hour: "09:00",
@@ -426,7 +426,7 @@ const premierLeague = {
         homeTeam: "Fullham",
         awayTeam: "Manchester United",
         dateMatch: {
-          day: 24,
+          day: 28,
           month: 11,
           year: 2022,
           hour: "20:00",
@@ -507,6 +507,5 @@ const premierLeague = {
     },
   },
 };
-
 
 export default premierLeague;

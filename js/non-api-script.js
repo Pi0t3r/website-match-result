@@ -159,3 +159,26 @@ function showFilteredMatch() {
 matchEndAllNext.forEach((btn) => {
   btn.addEventListener("click", showFilteredMatch);
 });
+
+function shortenNameClub() {
+  let awayClub = document.querySelectorAll(".club-name-away");
+  let homeClub = document.querySelectorAll(".club-name-home");
+
+  awayClub.forEach((item) => {
+    if (item.innerHTML.length > 9) {
+      let deleteLastLetters = item.innerHTML.slice(7, item.innerHTML.length);
+      let replaced = item.innerHTML.replaceAll(deleteLastLetters, "...");
+      item.innerHTML = replaced;
+    }
+  });
+
+  homeClub.forEach((item) => {
+    if (item.innerHTML.length > 9) {
+      let deleteLastLetters = item.innerHTML.slice(7, item.innerHTML.length);
+      let replaced = item.innerHTML.replaceAll(deleteLastLetters, "...");
+      item.innerHTML = replaced;
+    }
+  });
+}
+
+shortenNameClub();

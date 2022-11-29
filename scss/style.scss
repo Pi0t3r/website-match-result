@@ -27,6 +27,7 @@ body {
 header {
   background-color: #001e28;
   color: white;
+  width: 101%;
   .short-description {
     background-color: #112f39;
     text-align: center;
@@ -90,7 +91,7 @@ header {
 
 // NAV
 nav {
-  width: 100%;
+  width: 101%;
   background-color: var(--background-nav);
   padding: 0 5px;
   font-size: 12px;
@@ -109,7 +110,7 @@ nav {
   right: 0;
   background-color: rgb(146, 145, 145);
   width: 40%;
-  height: 100vh;
+  height: 101vh;
   z-index: 100;
   transform: translateX(102%);
   transition: transform 0.4s;
@@ -176,12 +177,13 @@ nav {
   }
 }
 .toggleSide {
-  transform: translateX(0);
+  transform: translateX(1%);
 }
 // MAIN
 main {
   position: relative;
   overflow: hidden;
+  width: 101%;
   .filters {
     width: 100%;
     padding: 10px 20px;

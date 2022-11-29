@@ -60,6 +60,32 @@ function showSideMenu() {
 function hideSideMenu() {
   document.querySelector(".side-menu").classList.remove("toggleSide");
 }
+const toggleNameTheme = document.querySelector("#toggleNameTheme");
+function setTheme(themeName) {
+  localStorage.setItem("theme", themeName);
+  document.documentElement.className = themeName;
+}
+(function () {
+  if (localStorage.getItem("theme") === "theme-dark") {
+    setTheme("theme-dark");
+  } else {
+    setTheme("theme-light");
+  }
+});
+
+function toggleTheme() {
+  if (localStorage.getItem("theme") === "theme-dark") {
+    setTheme("theme-light");
+    toggleNameTheme.innerHTML = "ciemny";
+  } else {
+    setTheme("theme-dark");
+    toggleNameTheme.innerHTML = "jasny";
+  }
+}
+
+const btnTheme = document.querySelector("#switch-round");
+btnTheme.addEventListener("click", toggleTheme);
+
 closeMenu.addEventListener("click", hideSideMenu);
 burgerMenu.addEventListener("click", showSideMenu);
 nextDayBtn.addEventListener("click", setNextDay);

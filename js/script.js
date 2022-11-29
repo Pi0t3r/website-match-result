@@ -6,6 +6,8 @@ const elements = [
 ];
 const previousDayBtn = document.querySelector("#previous-day");
 const nextDayBtn = document.querySelector("#next-day");
+const toggleNameTheme = document.querySelector("#toggleNameTheme");
+const btnTheme = document.querySelector("#switch-round");
 
 let day = new Date();
 elements.forEach((items) => {
@@ -60,7 +62,7 @@ function showSideMenu() {
 function hideSideMenu() {
   document.querySelector(".side-menu").classList.remove("toggleSide");
 }
-const toggleNameTheme = document.querySelector("#toggleNameTheme");
+
 function setTheme(themeName) {
   localStorage.setItem("theme", themeName);
   document.documentElement.className = themeName;
@@ -76,16 +78,15 @@ function setTheme(themeName) {
 function toggleTheme() {
   if (localStorage.getItem("theme") === "theme-dark") {
     setTheme("theme-light");
-    toggleNameTheme.innerHTML = "ciemny";
+    toggleNameTheme.innerHTML = "jasny";
   } else {
     setTheme("theme-dark");
-    toggleNameTheme.innerHTML = "jasny";
+    toggleNameTheme.innerHTML = "ciemny";
   }
 }
 
-const btnTheme = document.querySelector("#switch-round");
-btnTheme.addEventListener("click", toggleTheme);
 
+btnTheme.addEventListener("click", toggleTheme);
 closeMenu.addEventListener("click", hideSideMenu);
 burgerMenu.addEventListener("click", showSideMenu);
 nextDayBtn.addEventListener("click", setNextDay);

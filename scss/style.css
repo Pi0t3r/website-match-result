@@ -86,9 +86,12 @@ nav .image img {
 
 .side-menu {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   top: 0;
   right: 0;
-  background-color: white;
+  background-color: rgb(146, 145, 145);
   width: 40%;
   height: 100vh;
   z-index: 100;
@@ -98,16 +101,25 @@ nav .image img {
 .side-menu .top-menu {
   position: relative;
   top: 0;
+  height: 6%;
+  width: 100%;
 }
 .side-menu .top-menu #close {
-  padding: 10px;
   position: absolute;
   right: 0;
+  padding: 10px;
+  color: white;
 }
 .side-menu .list-menu {
   position: relative;
   top: 5%;
-  padding: 15px;
+  color: white;
+}
+.side-menu .list-menu .theme {
+  margin-bottom: 30px;
+}
+.side-menu .list-menu .theme p {
+  margin-bottom: 10px;
 }
 .side-menu .list-menu .theme .switch input {
   display: none;
@@ -118,7 +130,7 @@ nav .image img {
   height: 30px;
   padding: 3px;
   border-radius: 15px;
-  border: 2px solid #7e8382;
+  border: 2px solid white;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -128,8 +140,23 @@ nav .image img {
   width: 20px;
   height: 20px;
   border-radius: 12px;
-  background: #7e8382;
+  background: white;
   transition: 0.3s;
+}
+.side-menu .list-menu .theme .switch input:checked ~ label {
+  border-color: #000;
+}
+.side-menu .list-menu .theme .switch input:checked ~ label::after {
+  translate: 30px 0;
+  background: #000;
+}
+.side-menu .list-menu .theme .switch input:disabled ~ label {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.side-menu .list-menu .theme .switch.square label,
+.side-menu .list-menu .theme .switch.square label::after {
+  border-radius: 0;
 }
 
 .toggleSide {

@@ -41,7 +41,7 @@ header {
     padding: 8px;
     overflow: hidden;
     .left-side {
-      width: 50%;
+      width: 35%;
       .title {
         width: 100%;
         text-transform: uppercase;
@@ -53,17 +53,62 @@ header {
       }
     }
     .right-side {
-      width: 30%;
+      width: 65%;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-
+      align-items: center;
       button {
         border: none;
         background-color: #3a7d94;
         color: white;
         padding: 8px;
         border-radius: 8px;
+      }
+      .theme {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 70%;
+        justify-content: space-between;
+        .switch input {
+          display: none;
+        }
+        .switch label {
+          display: block;
+          width: 60px;
+          height: 30px;
+          padding: 3px;
+          border-radius: 15px;
+          border: 2px solid white;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        .switch label::after {
+          content: "";
+          display: inherit;
+          width: 20px;
+          height: 20px;
+          border-radius: 12px;
+          background: white;
+          transition: 0.3s;
+        }
+        .switch input:checked ~ label {
+          border-color: #000;
+        }
+        .switch input:checked ~ label::after {
+          translate: 30px 0;
+          background: #000;
+        }
+        .switch input:disabled ~ label {
+          opacity: 0.35;
+          cursor: not-allowed;
+        }
+
+        .switch.square label,
+        .switch.square label::after {
+          border-radius: 0;
+        }
       }
     }
   }
@@ -102,7 +147,7 @@ nav {
   }
 }
 .side-menu {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,50 +175,6 @@ nav {
     position: relative;
     top: 5%;
     color: white;
-    .theme {
-      margin-bottom: 30px;
-      p {
-        margin-bottom: 10px;
-      }
-      .switch input {
-        display: none;
-      }
-      .switch label {
-        display: block;
-        width: 60px;
-        height: 30px;
-        padding: 3px;
-        border-radius: 15px;
-        border: 2px solid white;
-        cursor: pointer;
-        transition: 0.3s;
-      }
-      .switch label::after {
-        content: "";
-        display: inherit;
-        width: 20px;
-        height: 20px;
-        border-radius: 12px;
-        background: white;
-        transition: 0.3s;
-      }
-      .switch input:checked ~ label {
-        border-color: #000;
-      }
-      .switch input:checked ~ label::after {
-        translate: 30px 0;
-        background: #000;
-      }
-      .switch input:disabled ~ label {
-        opacity: 0.35;
-        cursor: not-allowed;
-      }
-
-      .switch.square label,
-      .switch.square label::after {
-        border-radius: 0;
-      }
-    }
   }
 }
 .toggleSide {

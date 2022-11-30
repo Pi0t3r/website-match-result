@@ -44,7 +44,7 @@ header .header-content {
   overflow: hidden;
 }
 header .header-content .left-side {
-  width: 50%;
+  width: 35%;
 }
 header .header-content .left-side .title {
   width: 100%;
@@ -54,10 +54,11 @@ header .header-content .left-side .title .logo img {
   width: 10%;
 }
 header .header-content .right-side {
-  width: 30%;
+  width: 65%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 header .header-content .right-side button {
   border: none;
@@ -65,6 +66,50 @@ header .header-content .right-side button {
   color: white;
   padding: 8px;
   border-radius: 8px;
+}
+header .header-content .right-side .theme {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-between;
+}
+header .header-content .right-side .theme .switch input {
+  display: none;
+}
+header .header-content .right-side .theme .switch label {
+  display: block;
+  width: 60px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 15px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header .header-content .right-side .theme .switch label::after {
+  content: "";
+  display: inherit;
+  width: 20px;
+  height: 20px;
+  border-radius: 12px;
+  background: white;
+  transition: 0.3s;
+}
+header .header-content .right-side .theme .switch input:checked ~ label {
+  border-color: #000;
+}
+header .header-content .right-side .theme .switch input:checked ~ label::after {
+  translate: 30px 0;
+  background: #000;
+}
+header .header-content .right-side .theme .switch input:disabled ~ label {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+header .header-content .right-side .theme .switch.square label,
+header .header-content .right-side .theme .switch.square label::after {
+  border-radius: 0;
 }
 header .header-items {
   display: flex;
@@ -98,7 +143,7 @@ nav .image img {
 }
 
 .side-menu {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,49 +172,6 @@ nav .image img {
   position: relative;
   top: 5%;
   color: white;
-}
-.side-menu .list-menu .theme {
-  margin-bottom: 30px;
-}
-.side-menu .list-menu .theme p {
-  margin-bottom: 10px;
-}
-.side-menu .list-menu .theme .switch input {
-  display: none;
-}
-.side-menu .list-menu .theme .switch label {
-  display: block;
-  width: 60px;
-  height: 30px;
-  padding: 3px;
-  border-radius: 15px;
-  border: 2px solid white;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.side-menu .list-menu .theme .switch label::after {
-  content: "";
-  display: inherit;
-  width: 20px;
-  height: 20px;
-  border-radius: 12px;
-  background: white;
-  transition: 0.3s;
-}
-.side-menu .list-menu .theme .switch input:checked ~ label {
-  border-color: #000;
-}
-.side-menu .list-menu .theme .switch input:checked ~ label::after {
-  translate: 30px 0;
-  background: #000;
-}
-.side-menu .list-menu .theme .switch input:disabled ~ label {
-  opacity: 0.35;
-  cursor: not-allowed;
-}
-.side-menu .list-menu .theme .switch.square label,
-.side-menu .list-menu .theme .switch.square label::after {
-  border-radius: 0;
 }
 
 .toggleSide {
